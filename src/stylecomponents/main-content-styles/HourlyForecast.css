@@ -1,0 +1,107 @@
+/* Container principal da seção */
+.hourly-forecast {
+    grid-area: hourly;
+    width: 100%;
+    min-height: 600px;
+    background-color: var(--Neutral800);
+    border-radius: 0.513rem;
+    border: 0.05rem solid var(--Neutral600);
+    color: var(--Neutral0);
+    padding: 0;
+    position: relative; 
+}
+
+.hourly-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-bottom: 1.5rem;
+    padding: 0.8rem;
+}
+
+.title-hourly {
+    font-family: 'DMSans', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.day-button {
+    gap: 0.62rem;
+    font-size: 13px;
+    background-color: var(--Neutral700);
+    width: auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+.hourly-dropdown-list {
+    margin-right: 1rem;
+    font-family: 'Bricolage';
+    position: absolute;
+    min-width: 12.5rem;
+    right: 0;
+    z-index: 1;
+    outline-offset: 0.18rem;
+    background-color: var(--Neutral800);
+    border-radius: 0.313rem;
+    border: 0.05rem solid var(--Neutral600);
+    font-size: 13px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.hourly-cards-container{
+    display: flex;
+    padding: 0.5rem;
+    flex-direction: column;
+    max-height: 580px; 
+    overflow-y: auto; 
+}
+
+.hour-card {
+    font-family: 'DMSans', sans-serif;
+    min-width: 80px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Neutral700);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.05rem solid var(--Neutral600);
+    margin: 0.8rem 0;
+}
+
+.hour-card-loading {
+    min-height: 40px;
+   
+}
+
+.hour-info {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.hour-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0.5rem 0;
+}
+
+.hourly-cards-container::-webkit-scrollbar {
+  width: 6px;
+  
+}
+
+.hourly-cards-container::-webkit-scrollbar-track {
+  background: var(--Neutral800); 
+  border-radius: 10px;
+}
+
+.hourly-cards-container::-webkit-scrollbar-thumb {
+  background: var(--Neutral700);
+  border-radius: 10px;
+  border: 10px solid var(--Neutral600);
+}

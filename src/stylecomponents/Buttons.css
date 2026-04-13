@@ -1,0 +1,95 @@
+:root {
+    --Neutral900: hsl(243, 96%, 9%);
+    --Orange500: hsl(28, 100%, 52%);
+    --Blue500: hsl(233, 67%, 56%);
+    --Blue700: hsl(248, 70%, 36%);
+    --Neutral800: hsl(243, 27%, 20%);
+    --Neutral700: hsl(243, 23%, 24%);
+    --Neutral600: hsl(243, 23%, 30%);
+    --Neutral300: hsl(240, 6%, 70%);
+    --Neutral200: hsl(250, 6%, 84%);
+    --Neutral0: hsl(0, 0%, 100%);
+
+}
+
+button {
+    font-family: 'Bricolage';
+    border-radius: 0.513rem;
+    border: none;
+    display: flex;
+    width: 100%;
+    color: var(--Neutral0);
+    padding: 0.62rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    outline-offset: 0.18rem;
+}
+
+.units:focus {
+    outline: 0.12rem solid;
+}
+
+.switch:focus {
+    outline: 0.06rem solid;
+    background-color: var(--Neutral700);
+}
+
+.units {
+    gap: 0.62rem;
+    font-size: 13px;
+    background-color: var(--Neutral700);
+}
+
+.day-button{
+    gap: 0.62rem;
+    font-size: 13px;
+    background-color: var(--Neutral600);
+    width: auto;
+}
+
+.search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.4rem;
+    background-color: var(--Blue500);
+    margin: 0.313rem;
+    font-family: 'DMSans-medium';
+}
+
+.search-btn:focus{
+    outline: 0.12rem solid var(--Blue500);
+}
+
+.switch {
+    text-decoration: none;
+    font-size: 0.8rem;
+    background-color: var(--Neutral800);
+    font-size: 15px;
+}
+
+.medida-opt {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    background-color: var(--Neutral800);
+}
+
+.medida-opt p {
+    color: var(--Neutral0);
+    font-size: 15px;
+}
+
+.active {
+    background-color: var(--Neutral700);
+}
+
+.day-button .dropicon {
+    width: 0.75rem; 
+    height: auto;
+}

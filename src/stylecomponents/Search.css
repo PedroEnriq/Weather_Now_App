@@ -1,0 +1,54 @@
+:root {
+  --Neutral900: hsl(243, 96%, 9%);
+  --Orange500: hsl(28, 100%, 52%);
+  --Blue500: hsl(233, 67%, 56%);
+  --Blue700: hsl(248, 70%, 36%);
+  --Neutral800: hsl(243, 27%, 20%);
+  --Neutral700: hsl(243, 23%, 24%);
+  --Neutral600: hsl(243, 23%, 30%);
+  --Neutral300: hsl(240, 6%, 70%);
+  --Neutral200: hsl(250, 6%, 84%);
+  --Neutral0: hsl(0, 0%, 100%);
+
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+.search input{
+    background-color: var(--Neutral700);
+    border-radius: 0.513rem;
+    border: none;
+    padding: 0.62rem;
+    width: 20rem;
+    outline: none;
+    color: var(--Neutral200);
+    font-family: 'DMSans-medium';
+}
+
+.search input::placeholder{
+    color: var(--Neutral200);
+    font-family: 'DMSans-medium';
+}
+
+.input-box{
+    background-color: var(--Neutral700);
+    border-radius: 0.513rem;
+    border: none;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 0.313rem;
+    padding: 1px 16px;
+}
+
+.input-box:focus-within{
+    outline: 0.12rem solid var(--Neutral0);
+    outline-offset: 0.18rem;
+}
+
+.icon-search{
+    width: 1rem;
+}
